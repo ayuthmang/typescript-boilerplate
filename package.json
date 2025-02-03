@@ -1,0 +1,19 @@
+{
+  "name": "typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "TypeScript Boilerplate Starter Kit",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ayuth Mangmesap",
+  "license": "MIT",
+  "packageManager": "pnpm@9.0.0",
+  "dependencies": {
+    "turbo": "^2.3.3"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2"
+  }
+}
