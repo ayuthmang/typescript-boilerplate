@@ -1,9 +1,12 @@
 import { PrismaClient } from "@prisma/client";
-import { faker } from "@faker-js/faker";
 
 const prisma = new PrismaClient();
 
 async function seed() {
+  // @faker-js/faker v10 is ESM-only; dynamic import keeps this file compatible
+  // with the package's CommonJS module setting under NodeNext.
+  const { faker } = await import("@faker-js/faker");
+
   console.log("🌱 Seeding...");
   console.time(`🌱 Database has been seeded`);
 
